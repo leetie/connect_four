@@ -11,8 +11,6 @@ class Game
     @board = Array.new(6) {Array.new(7, "O".colorize(:background => :green))}
     @player_1 = Player.new(true)
     @player_2 = Player.new(false)
-    # @player1_piece = "X".colorize(:background => :red)
-    # @player2_piece = "X".colorize(:background => :blue)
     @current_player = @player_1
     @choice = nil
   end 
@@ -49,7 +47,8 @@ class Game
       puts "Invalid choice"
       get_choice
       return process_choice
-    elsif self.board[vertical_pos][static_pos] == "O".colorize(:background => :green)
+    elsif self.board[vertical_pos][static_pos] == 
+      "O".colorize(:background => :green)
       self.board[vertical_pos][static_pos] = @current_player.text_content
     else self.process_choice(vertical_pos-1, static_pos)
     end
@@ -66,9 +65,7 @@ class Game
   def game_loop
     system 'clear'
     self.start_message
-
     while true
-
       self.print_board
       self.get_choice
       self.process_choice
@@ -82,11 +79,3 @@ class Game
     end
   end
 end
-
-# game = Game.new
-# game.game_loop
-# game.start_message
-# game.print_board
-# game.get_choice
-# game.process_choice
-# game.print_board
