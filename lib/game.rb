@@ -1,6 +1,6 @@
-#./lib/connect_four.rb
+#./lib/cgame.rb
 require 'colorize'
-require_relative 'player_class'
+require_relative 'player'
 
 class Game
   include Enumerable

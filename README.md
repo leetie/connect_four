@@ -4,7 +4,7 @@ The goal of this project was to practice TDD with Rspec.
 
 # Setup
 
-- This program assumes you have Ruby installed. If you don't, check it out (here)[https://www.ruby-lang.org/en/downloads/] 💎
+- This program assumes you have Ruby installed. If you don't, check it out [here](https://www.ruby-lang.org/en/downloads/) 💎
 
 ### Install dependencies
 
